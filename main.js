@@ -15,7 +15,7 @@ function opcionSuaveDescafeinado(){
                     cafeSeleccionado: "Vaso TakeAway - Descafeinado",
                     info:"Ideal para tomar en el camino",
                     foto:"./img/cafeTakeAway.jpg",
-                    linkCompra:"www.google.com"
+                    linkCompra:"#"
                 },
             ];
 
@@ -37,7 +37,7 @@ function opcionSuaveDescafeinado(){
                         cafeSeleccionado: "Cafe doble - Descafeinado",
                         info:"Para disfrutar sentado leyendo un libro",
                         foto:"./img/cafeSalon.jpg",
-                        linkCompra:"www.google.com"
+                        linkCompra:"#"
                     },
                 ];
     
@@ -59,7 +59,7 @@ function opcionSuaveDescafeinado(){
                         cafeSeleccionado: "Bolsa de 1/4 molido - Descafeinado",
                         info:"Listo para preparar (para cafeteras con filtro de tela) ",
                         foto:"./img/cafePaquete.jpg",
-                        linkCompra:"www.google.com"
+                        linkCompra:"#"
                     }
                 ];
     
@@ -96,7 +96,7 @@ function opcionSuaveColombia(){
                     cafeSeleccionado: "Vaso TakeAway - Colombia",
                     info:"Ideal para tomar en el camino",
                     foto:"./img/cafeTakeAway.jpg",
-                    linkCompra:"www.google.com"
+                    linkCompra:"#"
                 },
             ];
 
@@ -118,7 +118,7 @@ function opcionSuaveColombia(){
                         cafeSeleccionado: "Cafe doble - Colombia",
                         info:"Para disfrutar sentado leyendo un libro",
                         foto:"./img/cafeSalon.jpg",
-                        linkCompra:"www.google.com"
+                        linkCompra:"#"
                     },
                 ];
     
@@ -140,7 +140,7 @@ function opcionSuaveColombia(){
                         cafeSeleccionado: "Bolsa de 1/4 molido - Colombia",
                         info:"Listo para preparar (para cafeteras con filtro de tela) ",
                         foto:"./img/cafePaquete.jpg",
-                        linkCompra:"www.google.com"
+                        linkCompra:"#"
                     }
                 ];
     
@@ -200,7 +200,7 @@ function opcionIntermedioSelecto(){
                     cafeSeleccionado: "Vaso TakeAway - Selecto",
                     info:"Ideal para tomar en el camino",
                     foto:"./img/cafeTakeAway.jpg",
-                    linkCompra:"www.google.com"
+                    linkCompra:"#"
                 }
             ];
 
@@ -222,7 +222,7 @@ function opcionIntermedioSelecto(){
                     cafeSeleccionado: "Cafe doble - Selecto",
                     info:"Para disfrutar sentado leyendo un libro",
                     foto:"./img/cafeSalon.jpg",
-                    linkCompra:"www.google.com"
+                    linkCompra:"#"
                 },
             ];
 
@@ -244,7 +244,7 @@ function opcionIntermedioSelecto(){
                     cafeSeleccionado: "Bolsa de 1/4 molido - Selecto",
                     info:"Listo para preparar (para cafeteras con filtro de tela) ",
                     foto:"./img/selecto.jpg",
-                    linkCompra:"www.google.com"
+                    linkCompra:"#"
                 }
             ];
 
