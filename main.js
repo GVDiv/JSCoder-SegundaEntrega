@@ -1,4 +1,4 @@
-
+// Intensidad Suaves
 function opcionSuaveDescafeinado(){
     let op = prompt(`Como le preparamos su cafe?:
         1: Para llevar
@@ -12,7 +12,7 @@ function opcionSuaveDescafeinado(){
 
             const galeriaCafeSuaveD1 = [
                 {
-                    cafeSeleccionado: "Vaso TakeAway",
+                    cafeSeleccionado: "Vaso TakeAway - Descafeinado",
                     info:"Ideal para tomar en el camino",
                     foto:"./img/cafeTakeAway.jpg",
                     linkCompra:"www.google.com"
@@ -34,7 +34,7 @@ function opcionSuaveDescafeinado(){
     
                 const galeriaCafeSuave2 = [
                     {
-                        cafeSeleccionado: "Cafe doble con Crema",
+                        cafeSeleccionado: "Cafe doble - Descafeinado",
                         info:"Para disfrutar sentado leyendo un libro",
                         foto:"./img/cafeSalon.jpg",
                         linkCompra:"www.google.com"
@@ -56,7 +56,7 @@ function opcionSuaveDescafeinado(){
     
                 const galeriaCafeSuave3 = [
                     {
-                        cafeSeleccionado: "Bolsa de 1/4 molido",
+                        cafeSeleccionado: "Bolsa de 1/4 molido - Descafeinado",
                         info:"Listo para preparar (para cafeteras con filtro de tela) ",
                         foto:"./img/cafePaquete.jpg",
                         linkCompra:"www.google.com"
@@ -80,6 +80,87 @@ function opcionSuaveDescafeinado(){
     }
 }
 
+function opcionSuaveColombia(){
+    let op = prompt(`Como le preparamos su cafe?:
+        1: Para llevar
+        2: Para tomar en el local
+        3: Paquete de 1/4 molido
+        
+        Ingrese 1, 2 o 3.`);
+    switch(op){
+        case "1":
+            let opcionColombia = Number;
+
+            const galeriaCafeSuaveC1 = [
+                {
+                    cafeSeleccionado: "Vaso TakeAway - Colombia",
+                    info:"Ideal para tomar en el camino",
+                    foto:"./img/cafeTakeAway.jpg",
+                    linkCompra:"www.google.com"
+                },
+            ];
+
+            const indiceGaleriaCafeSuaveC1 = Math.floor(Math.random()*galeriaCafeSuaveC1.length);
+
+            document.write(`<div class="card">
+                <img src=${galeriaCafeSuaveC1[indiceGaleriaCafeSuaveC1].foto} alt=${galeriaCafeSuaveC1[indiceGaleriaCafeSuaveC1].cafeSeleccionado}>
+                <h2>${galeriaCafeSuaveC1[indiceGaleriaCafeSuaveC1].cafeSeleccionado}</h2>
+                <p class="card-text">${galeriaCafeSuaveC1[indiceGaleriaCafeSuaveC1].info}</p>
+                <a href="${galeriaCafeSuaveC1[indiceGaleriaCafeSuaveC1].linkCompra}" class="btn btn-primary">Pagar</a>
+                </div>`)
+
+            break;
+            case "2":
+                let opcionColombia2 = Number;
+    
+                const galeriaCafeSuaveC2 = [
+                    {
+                        cafeSeleccionado: "Cafe doble - Colombia",
+                        info:"Para disfrutar sentado leyendo un libro",
+                        foto:"./img/cafeSalon.jpg",
+                        linkCompra:"www.google.com"
+                    },
+                ];
+    
+                const indiceGaleriaCafeSuaveC2 = Math.floor(Math.random()*galeriaCafeSuaveC2.length)
+    
+                document.write(`<div class="card">
+                    <img src=${galeriaCafeSuaveC2[indiceGaleriaCafeSuaveC2].foto} alt=${galeriaCafeSuaveC2[indiceGaleriaCafeSuaveC2].cafeSeleccionado}>
+                    <h2>${galeriaCafeSuaveC2[indiceGaleriaCafeSuaveC2].cafeSeleccionado}</h2>
+                    <p class="card-text">${galeriaCafeSuaveC2[indiceGaleriaCafeSuaveC2].info}</p>
+                    <a href="${galeriaCafeSuaveC2[indiceGaleriaCafeSuaveC2].linkCompra}" class="btn btn-primary">Pagar</a>
+                    </div>`)
+    
+                break;
+                case "3":
+                let opcionColombia3 = Number;
+    
+                const galeriaCafeSuaveC3 = [
+                    {
+                        cafeSeleccionado: "Bolsa de 1/4 molido - Colombia",
+                        info:"Listo para preparar (para cafeteras con filtro de tela) ",
+                        foto:"./img/cafePaquete.jpg",
+                        linkCompra:"www.google.com"
+                    }
+                ];
+    
+                const indiceGaleriaCafeSuaveC3 = Math.floor(Math.random()*galeriaCafeSuaveC3.length)
+    
+                document.write(`<div class="card">
+                    <img src=${galeriaCafeSuaveC3[indiceGaleriaCafeSuaveC3].foto} alt=${galeriaCafeSuaveC3[indiceGaleriaCafeSuaveC3].cafeSeleccionado}>
+                    <h2>${galeriaCafeSuaveC3[indiceGaleriaCafeSuaveC3].cafeSeleccionado}</h2>
+                    <p class="card-text">${galeriaCafeSuaveC3[indiceGaleriaCafeSuaveC3].info}</p>
+                    <a href="${galeriaCafeSuaveC3[indiceGaleriaCafeSuaveC3].linkCompra}" class="btn btn-primary">Pagar</a>
+                    </div>`)
+    
+                break;
+
+                default: 
+                    alert("Elije una opcion valida");
+                    seleccionarVariedadSuave();
+    }
+}
+
 function seleccionarVariedadSuave(){
     let op = prompt(`Los cafes suaves que tenemos son:
     1: Descafeinado
@@ -93,12 +174,114 @@ function seleccionarVariedadSuave(){
             break;
         case "2":
             let variedadSuaveColombia = Number;
-            montoSuaveColombia();
+            opcionSuaveColombia();
             break;
         default:
             alert("Elija una opcion valida");
             seleccionarVariedadSuave();
 
+    }
+}
+
+//Intensidad Intermedio
+function opcionIntermedioSelecto(){
+    let op = prompt(`Como le preparamos su cafe?:
+    1: Para llevar
+    2: Para tomar en el local
+    3: Paquete de 1/4 molido
+    
+    Ingrese 1, 2 o 3.`);
+    switch(op){
+        case "1":
+            let opcionSelecto = Number;
+
+            const galeriaCafeIntermedioS1 = [
+                {
+                    cafeSeleccionado: "Vaso TakeAway - Selecto",
+                    info:"Ideal para tomar en el camino",
+                    foto:"./img/cafeTakeAway.jpg",
+                    linkCompra:"www.google.com"
+                }
+            ];
+
+            const indiceGaleriaCafeS1 = Math.floor(Math.random()*galeriaCafeIntermedioS1.length);
+
+            document.write(`<div class="card">
+            <img src=${galeriaCafeIntermedioS1[indiceGaleriaCafeS1].foto} alt=${galeriaCafeIntermedioS1[indiceGaleriaCafeS1].cafeSeleccionado}>
+            <h2>${galeriaCafeIntermedioS1[indiceGaleriaCafeS1].cafeSeleccionado}</h2>
+            <p class="card-text">${galeriaCafeIntermedioS1[indiceGaleriaCafeS1].info}</p>
+            <a href="${galeriaCafeIntermedioS1[indiceGaleriaCafeS1].linkCompra}" class="btn btn-primary">Pagar</a>
+            </div>`)
+
+        break;
+        case "2":
+            let opcionSelecto2 = Number;
+
+            const galeriaCafeIntermedioS2 = [
+                {
+                    cafeSeleccionado: "Cafe doble - Selecto",
+                    info:"Para disfrutar sentado leyendo un libro",
+                    foto:"./img/cafeSalon.jpg",
+                    linkCompra:"www.google.com"
+                },
+            ];
+
+            const indiceGaleriaCafeS2 = Math.floor(Math.random()*galeriaCafeIntermedioS2.length);
+
+            document.write(`<div class="card">
+            <img src=${galeriaCafeIntermedioS2[indiceGaleriaCafeS2].foto} alt=${galeriaCafeIntermedioS2[indiceGaleriaCafeS2].cafeSeleccionado}>
+            <h2>${galeriaCafeIntermedioS2[indiceGaleriaCafeS2].cafeSeleccionado}</h2>
+            <p class="card-text">${galeriaCafeIntermedioS2[indiceGaleriaCafeS2].info}</p>
+            <a href="${galeriaCafeIntermedioS2[indiceGaleriaCafeS2].linkCompra}" class="btn btn-primary">Pagar</a>
+            </div>`)
+        
+        break;
+        case "3":
+            let opcionSelecto3 = Number;
+
+            const galeriaCafeIntermedioS3 = [
+                {
+                    cafeSeleccionado: "Bolsa de 1/4 molido - Selecto",
+                    info:"Listo para preparar (para cafeteras con filtro de tela) ",
+                    foto:"./img/selecto.jpg",
+                    linkCompra:"www.google.com"
+                }
+            ];
+
+            const indiceGaleriaCafeS3 = Math.floor(Math.random()*galeriaCafeIntermedioS3.length);
+
+            document.write(`<div class="card">
+            <img src=${galeriaCafeIntermedioS3[indiceGaleriaCafeS3].foto} alt=${galeriaCafeIntermedioS3[indiceGaleriaCafeS3].cafeSeleccionado}>
+            <h2>${galeriaCafeIntermedioS3[indiceGaleriaCafeS3].cafeSeleccionado}</h2>
+            <p class="card-text">${galeriaCafeIntermedioS3[indiceGaleriaCafeS3].info}</p>
+            <a href="${galeriaCafeIntermedioS3[indiceGaleriaCafeS3].linkCompra}" class="btn btn-primary">Pagar</a>
+            </div>`)
+
+        break;
+        default:
+            alert("Elije una opcion valida");
+            opcionIntermedioSelecto();
+    }
+}
+
+function seleccionarVariedadIntermedio(){
+    let op = prompt(`Los cafes intermedios que tenemos son:
+    1: Selecto
+    2: Brasil.
+    
+    Ingrese 1 o 2.`)
+    switch(op){
+        case "1" :
+            let variedadItermedioSelecto = Number;
+            opcionIntermedioSelecto();
+            break;
+        case "2" :
+            let varierdadIntermedioBrasil = Number;
+            opcionIntermedioBrasil();
+            break;
+            default:
+                alert("Elija una opcion valida");
+                seleccionarVariedadIntermedio();
     }
 }
 
