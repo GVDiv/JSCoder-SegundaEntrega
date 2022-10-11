@@ -25,7 +25,7 @@ function opcionSuaveDescafeinado(){
                 <img src=${galeriaCafeSuaveD1[indiceGaleriaCafeSuaveD1].foto} alt=${galeriaCafeSuaveD1[indiceGaleriaCafeSuaveD1].cafeSeleccionado}>
                 <h2>${galeriaCafeSuaveD1[indiceGaleriaCafeSuaveD1].cafeSeleccionado}</h2>
                 <p class="card-text">${galeriaCafeSuaveD1[indiceGaleriaCafeSuaveD1].info}</p>
-                <a href="${galeriaCafeSuaveD1[indiceGaleriaCafeSuaveD1].linkCompra}" class="btn btn-primary">Comprar</a>
+                <a href="${galeriaCafeSuaveD1[indiceGaleriaCafeSuaveD1].linkCompra}" class="btn btn-primary">Pagar</a>
                 </div>`)
 
             break;
@@ -34,8 +34,8 @@ function opcionSuaveDescafeinado(){
     
                 const galeriaCafeSuave2 = [
                     {
-                        cafeSeleccionado: "Pocillo Salon",
-                        info:"Para disfrutar sentado en el salon",
+                        cafeSeleccionado: "Cafe doble con Crema",
+                        info:"Para disfrutar sentado leyendo un libro",
                         foto:"./img/cafeSalon.jpg",
                         linkCompra:"www.google.com"
                     },
@@ -47,7 +47,7 @@ function opcionSuaveDescafeinado(){
                     <img src=${galeriaCafeSuave2[indiceGaleriaCafeSuave2].foto} alt=${galeriaCafeSuave2[indiceGaleriaCafeSuave2].cafeSeleccionado}>
                     <h2>${galeriaCafeSuave2[indiceGaleriaCafeSuave2].cafeSeleccionado}</h2>
                     <p class="card-text">${galeriaCafeSuave2[indiceGaleriaCafeSuave2].info}</p>
-                    <a href="${galeriaCafeSuave2[indiceGaleriaCafeSuave2].linkCompra}" class="btn btn-primary">Comprar</a>
+                    <a href="${galeriaCafeSuave2[indiceGaleriaCafeSuave2].linkCompra}" class="btn btn-primary">Pagar</a>
                     </div>`)
     
                 break;
@@ -57,7 +57,7 @@ function opcionSuaveDescafeinado(){
                 const galeriaCafeSuave3 = [
                     {
                         cafeSeleccionado: "Bolsa de 1/4 molido",
-                        info:"Listo para preparar en cafeteras de filtro de tela",
+                        info:"Listo para preparar (para cafeteras con filtro de tela) ",
                         foto:"./img/cafePaquete.jpg",
                         linkCompra:"www.google.com"
                     }
@@ -69,7 +69,7 @@ function opcionSuaveDescafeinado(){
                     <img src=${galeriaCafeSuave3[indiceGaleriaCafeSuave3].foto} alt=${galeriaCafeSuave3[indiceGaleriaCafeSuave3].cafeSeleccionado}>
                     <h2>${galeriaCafeSuave3[indiceGaleriaCafeSuave3].cafeSeleccionado}</h2>
                     <p class="card-text">${galeriaCafeSuave3[indiceGaleriaCafeSuave3].info}</p>
-                    <a href="${galeriaCafeSuave3[indiceGaleriaCafeSuave3].linkCompra}" class="btn btn-primary">Comprar</a>
+                    <a href="${galeriaCafeSuave3[indiceGaleriaCafeSuave3].linkCompra}" class="btn btn-primary">Pagar</a>
                     </div>`)
     
                 break;
@@ -97,6 +97,7 @@ function seleccionarVariedadSuave(){
             break;
         default:
             alert("Elija una opcion valida");
+            seleccionarVariedadSuave();
 
     }
 }
@@ -123,7 +124,8 @@ function seleccionarIntensidad(){
             seleccionarVariedadFuerte();
             break;
         default:
-            alert("Ingrese una de las opciones validas")
+            alert("Ingrese una de las opciones validas");
+            seleccionarIntensidad();
     }
 }
 
@@ -131,19 +133,19 @@ function elegirRespuesta(respuesta){
     if(respuesta == 'si'){
         seleccionarIntensidad();
     }else{
-        alert("bueno, que disfrute su té");
+        alert("Que tenga un buen dia!");
     }
 }
 
 function tomarDecision(bienvenida){
     if(bienvenida){
-        let respuesta = prompt("¿Querés una recomendacion de Café? si/no").toLowerCase();
+        let respuesta = prompt("¿Querés una recomendacion de Café?  SI / NO").toLowerCase();
         elegirRespuesta(respuesta);
     }
 }
 
 function iniciarRecomendacion(){
-    let bienvenida = confirm("Bienvenido a CafeMartinez Online");
+    let bienvenida = confirm("--------Bienvenido a CafeMartinez Online--------");
     tomarDecision(bienvenida)
 }
 
